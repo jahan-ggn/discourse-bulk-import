@@ -2,4 +2,4 @@
 
 **Plugin Summary**
 
-For more information, please see: **url to meta topic**
+This plugin allows admins to upload a JSON file and import users, topics, posts, and tags in bulk.

@@ -1,0 +1,77 @@
+.bulk-import-uploader-container {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.bulk-import-card {
+  background: var(--secondary);
+  border-radius: 0.5em;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: var(--shadow-menu-panel);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.import-title {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.import-description {
+  color: var(--primary-medium);
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+}
+
+.import-button {
+  font-size: 1em;
+  padding: 0.6em 1.2em;
+  white-space: nowrap;
+}
+
+.import-stats {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+.import-log {
+  max-height: 250px;
+  overflow-y: auto;
+  background: var(--primary-low);
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  text-align: left;
+  font-family: monospace;
+  font-size: 0.85em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 480px) {
+  .bulk-import-card {
+    padding: 1em;
+  }
+
+  .import-title {
+    font-size: 1.2em;
+  }
+
+  .import-description {
+    font-size: 0.9em;
+  }
+
+  .import-button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .import-log {
+    font-size: 0.8em;
+  }
+}

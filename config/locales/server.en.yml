@@ -1,1 +1,21 @@
 en:
+  site_settings:
+    discourse_bulk_import_enabled: "Enable Bulk Import Plugin Features"
+  bulk_import:
+    topic_label: "Topic #%{index} - %{title}"
+    errors:
+      topic_failed: "❌ Failed to import %{label} %{error}"
+      topic_creation_failed: "🚫 Topic creation failed: %{errors}"
+      unknown: "Unknown error"
+      post_failed: "🛑 Post #%{index} by @%{username} failed: %{error}. Content: %{raw}"
+      missing_title: "Missing or empty topic_title"
+      title_too_short: "Topic title is too short (%{actual} < %{min})"
+      invalid_category: "Missing or invalid topic_category_id"
+      missing_posts: "Missing or empty posts array"
+      missing_post_field: "Post #%{index} missing or empty field: '%{field}'"
+      post_too_short: "Post #%{index} content too short (%{actual} < %{min})"
+      no_file: "No file uploaded."
+      invalid_json: "Invalid JSON format: %{error}"
+      unexpected: "Unexpected error: %{error}"
+    modal:
+      complete: Import Complete

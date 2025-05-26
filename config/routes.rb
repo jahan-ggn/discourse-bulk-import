@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 DiscourseBulkImport::Engine.routes.draw do
-  get "/examples" => "examples#index"
-  # define routes here
+  post "/bulk_import" => "bulk_import#upload"
+  get "/bulk/import" => "bulk_import#index"
 end
 
-Discourse::Application.routes.draw { mount ::DiscourseBulkImport::Engine, at: "discourse-bulk-import" }
+Discourse::Application.routes.draw { mount ::DiscourseBulkImport::Engine, at: "/" }

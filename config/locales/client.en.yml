@@ -4,6 +4,23 @@ en:
       site_settings:
         categories:
           discourse_bulk_import: "Discourse Bulk Import"
+      bulk_import:
+        title: "Bulk JSON Import"
+        description: "Upload a JSON file containing users, topics, and posts to import into your Discourse instance."
+        dialog:
+          upload_error: "An error occurred while uploading the file: %{error}"
+        form:
+          upload: Upload a JSON File
+        modal:
+          title: "Import Summary"
+          total: "Total"
+          successful: "Successful"
+          failed: "Failed"
+          log: "Import Log"
+          ok: "OK"
+        uploading: File upload is in progress
   js:
     discourse_bulk_import:
       placeholder: placeholder
+    bulk_import:
+      title: "Bulk Import"

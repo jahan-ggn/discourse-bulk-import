@@ -1,4 +1,4 @@
-discourse_bulk_import:
+plugins:
   discourse_bulk_import_enabled:
-    default: false
+    default: true
     client: true
