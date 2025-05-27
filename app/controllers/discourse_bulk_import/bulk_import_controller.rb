@@ -5,6 +5,8 @@ module ::DiscourseBulkImport
   class BulkImportController < ::ApplicationController
     requires_plugin PLUGIN_NAME
 
+    before_action :ensure_admin
+
     def upload
       hijack do
         begin
